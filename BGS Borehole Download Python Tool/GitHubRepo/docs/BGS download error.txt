@@ -1,0 +1,100 @@
+(base) PS C:\Users\EDM75040> cd -path 'C:\Users\EDM75040\Mott MacDonald\MMBC Team Site - Documents\Geotechnical\BGS Borehole Scraper\GitHubRepo\src'
+(base) PS C:\Users\EDM75040\Mott MacDonald\MMBC Team Site - Documents\Geotechnical\BGS Borehole Scraper\GitHubRepo\src> conda activate geo_env
+(geo_env) PS C:\Users\EDM75040\Mott MacDonald\MMBC Team Site - Documents\Geotechnical\BGS Borehole Scraper\GitHubRepo\src> python
+Python 3.9.7 | packaged by conda-forge | (default, Sep 29 2021, 19:15:42) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from BGS_Polygon_Scraper import *
+>>> scrape_BGS_csv()
+Select csv input file from Gridreferencefinder
+
+C:/Users/EDM75040/OneDrive - Mott MacDonald/BGS test.csv
+Select output folder
+
+C:/Users/EDM75040/OneDrive - Mott MacDonald
+Borehole 20783326 data is not available
+Borehole 20783328 data is not available
+Borehole 20783329 data is not available
+Borehole 20783330 data is not available
+Borehole 20783021 data is not available
+Borehole 20783022 data is not available
+Borehole 20764683 data is not available
+Borehole 20764684 data is not available
+Borehole 20764685 data is not available
+Borehole 20764686 data is not available
+Borehole 20764687 data is not available
+Borehole 20764688 data is not available
+Borehole 20764689 data is not available
+Borehole 20764619 data is not available
+Borehole 20764620 data is not available
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9336/images/10013926
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9333/images/10013926
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9332/images/10013926
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9339/images/10013927
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9337/images/10013926
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9454/images/10014106
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9334/images/10013926
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9338/images/10013927
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9335/images/10013926
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9455/images/10014107
+C:/Users/EDM75040/OneDrive - Mott MacDonald/SD50SW104.pdf SD50SW104
+Traceback (most recent call last):
+  File "C:\Users\EDM75040\Anaconda3\envs\geo_env\lib\site-packages\img2pdf.py", line 1448, in read_images
+    imgdata = Image.open(im)
+  File "C:\Users\EDM75040\Anaconda3\envs\geo_env\lib\site-packages\PIL\Image.py", line 3030, in open
+    raise UnidentifiedImageError(
+PIL.UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x0000027471CB9D10>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "C:\Users\EDM75040\Mott MacDonald\MMBC Team Site - Documents\Geotechnical\BGS Borehole Scraper\GitHubRepo\src\BGS_Polygon_Scraper.py", line 309, in scrape_BGS_csv
+    BGS.download_images(XYZ.image_paths, output_path)
+  File "C:\Users\EDM75040\Mott MacDonald\MMBC Team Site - Documents\Geotechnical\BGS Borehole Scraper\GitHubRepo\src\BGS_Polygon_Scraper.py", line 259, in download_images
+    f.write(img2pdf.convert(ListOfImage))
+  File "C:\Users\EDM75040\Anaconda3\envs\geo_env\lib\site-packages\img2pdf.py", line 2263, in convert
+    ) in read_images(
+  File "C:\Users\EDM75040\Anaconda3\envs\geo_env\lib\site-packages\img2pdf.py", line 1452, in read_images
+    raise ImageOpenError(
+img2pdf.ImageOpenError: cannot read input image (not jpeg2000). PIL: error reading image: cannot identify image file <_io.BytesIO object at 0x0000027471CB9D10>
+>>> scrape_BGS_csv()
+Select csv input file from Gridreferencefinder
+
+C:/Users/EDM75040/OneDrive - Mott MacDonald/BGS test.csv
+Select output folder
+
+C:/Users/EDM75040/OneDrive - Mott MacDonald
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9420/images/10014070
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9418/images/10014067
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9418/images/10014068
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9376/images/10014000
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9363/images/10013956
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9363/images/10013957
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9363/images/10013958
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9361/images/10013947
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9361/images/10013948
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9361/images/10013949
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9377/images/10014001
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9378/images/10014002
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9360/images/10013944
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9360/images/10013945
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9360/images/10013946
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9419/images/10014069
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9421/images/10014071
+Downloading : http://scans.bgs.ac.uk/sobi_scans/boreholes/9421/images/10014074
+C:/Users/EDM75040/OneDrive - Mott MacDonald/SD50SW181.pdf SD50SW181
+C:/Users/EDM75040/OneDrive - Mott MacDonald/SD50SW179.pdf SD50SW179
+C:/Users/EDM75040/OneDrive - Mott MacDonald/SD50SW137.pdf SD50SW137
+C:/Users/EDM75040/OneDrive - Mott MacDonald/SD50SW124.pdf SD50SW124
+C:/Users/EDM75040/OneDrive - Mott MacDonald/SD50SW122.pdf SD50SW122
+C:/Users/EDM75040/OneDrive - Mott MacDonald/SD50SW138.pdf SD50SW138
+C:/Users/EDM75040/OneDrive - Mott MacDonald/SD50SW139.pdf SD50SW139
+C:/Users/EDM75040/OneDrive - Mott MacDonald/SD50SW121.pdf SD50SW121
+C:/Users/EDM75040/OneDrive - Mott MacDonald/SD50SW180.pdf SD50SW180
+C:/Users/EDM75040/OneDrive - Mott MacDonald/SD50SW182.pdf SD50SW182
+
+Download complete
+>>>
+
+
+http://scans.bgs.ac.uk/sobi_scans/boreholes/9336/images/10013926.html
